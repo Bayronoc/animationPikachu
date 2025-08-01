@@ -24,7 +24,6 @@ body {
     box-shadow: var(--shadow);
     overflow: hidden;
 }
-
 .phone__title {
     position: absolute;
     top: 30px;
@@ -32,4 +31,27 @@ body {
     transform: translateX(-50%);
     font-size: 2rem;
     color: #333;
+}
+.phone__score {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #333;
+}
+.phone__score::after {
+    content: counter(score);
+    font-weight: bold;
+}
+input:checked {
+    counter-increment: score;
+}
+input[type=checkbox] {
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+    height: 5rem;
+    width: 8rem;
+    margin: 0;
 }
