@@ -16,17 +16,18 @@ body {
 }
 .phone {
     position: relative;
-    height: 600px;
-    width: 300px;
+    height: 60rem;
+    width: 30rem;
     background: #CCEFFF;
-    border: 8px solid black;
-    border-radius: 40px;
-    box-shadow: var(--shadow);
+    border: 0.8rem solid black;
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
+/* Header */
 .phone__title {
     position: absolute;
-    top: 30px;
+    top: 3rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -34,12 +35,13 @@ body {
 }
 .phone__score {
     position: absolute;
-    top: 60px;
+    top: 6rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.5rem;
     color: #333;
 }
+/* Contador para el score */
 .phone__score::after {
     content: counter(score);
     font-weight: bold;
@@ -47,6 +49,7 @@ body {
 input:checked {
     counter-increment: score;
 }
+/* Estilos para los checkbox */
 input[type=checkbox] {
     position: relative;
     appearance: none;
@@ -54,4 +57,181 @@ input[type=checkbox] {
     height: 5rem;
     width: 8rem;
     margin: 0;
+}
+
+/* Walls */
+.layer-3 {
+    background: #bf624c;;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    height: 40rem;
+    left: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 20.2rem;
+}
+.layer-5 {
+    background: #bf624c;;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    height: 30rem;
+    overflow: hidden;
+    position: absolute;
+    width: 20rem;
+}
+.layer-7 {
+    background: #bf624c;;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    height: 20rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 15rem;
+}
+
+/* Pasto */
+.cesped {
+    background-color: #67A167;
+    height: 2rem;
+    width: 100%;
+}
+.zigzag {
+    background: linear-gradient(135deg, #67A167 25%, transparent 25%) -50px 0,
+                linear-gradient(-135deg, #a54a38 25%, transparent 25%) -50px 0,
+                linear-gradient(45deg, #67A167 25%, transparent 25%),
+                linear-gradient(-45deg, #67A167 25%, transparent 25%);
+    background-size: 30px 80px;
+    height: 30px;
+    width: 100%;
+}
+
+/* Nubes */
+.layer-8 {
+    position: absolute;
+    bottom: -1.4rem;
+    left: -2.8rem;
+    width: 50%;
+    height: 13rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.layer-9 {
+   position: absolute;
+   bottom: -1.4rem;
+   right: -2.8rem;
+   width: 50%;
+   height: 13rem;
+   background-color: white;
+   border-radius: 50%;
+}
+.layer-10 {
+    position: absolute;
+    bottom: -1.9rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 55%;
+    height: 15em;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Pikachu diseño flat */
+.head {
+    width: 7rem;
+    height: 7rem;
+    background-color: #FEE12B;
+    border-radius: 50%;
+    position: absolute;
+    top: 15rem;
+    left: 55%;
+}
+.nose {
+  position: absolute;
+  top: 176px;
+  left: 187px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid black;
+  border-radius: 10rem;
+}
+.cheek-left {
+    position: absolute;
+    top: 174px;
+    left: 156px;
+    width: 15px;
+    height: 20px;
+    background-color: #FF0000;
+    border-radius: 50%;
+}
+.cheek-right {
+    position: absolute;
+    top: 174px;
+    left: 210px;
+    width: 15px;
+    height: 20px;
+    background-color: #FF0000;
+    border-radius: 50%;
+}
+.eye-left {
+    position: absolute;
+    top: 163px;
+    left: 173px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+.pupila-left {
+    position: absolute;
+    top: 164px;
+    left: 177px;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+.eye-right {
+    position: absolute;
+    top: 163px;
+    left: 197px;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+.pupila-right {
+    position: absolute;
+    top: 164px;
+    left: 199px;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+.ear-left {
+    position: absolute;
+    top: 120px;
+    left: 165px;
+    width: 20px;
+    height: 80px;
+    background: linear-gradient(to bottom, black 10%, #FEE12B 10%);
+    border-radius: 90%;
+    rotate: -30deg;
+}
+.ear-right {
+    position: absolute;
+    top: 120px;
+    left: 191px;
+    width: 20px;
+    height: 80px;
+    background: linear-gradient(to bottom, black 10%, #FEE12B 10%);
+    border-radius: 90%;
+    rotate: 74deg;
 }
