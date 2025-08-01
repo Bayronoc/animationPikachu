@@ -24,10 +24,12 @@ body {
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
+
 /* Header */
-.phone__title {
+.phone__title img {
     position: absolute;
-    top: 3rem;
+    width: 55%;
+    top: 1rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
@@ -35,12 +37,18 @@ body {
 }
 .phone__score {
     position: absolute;
-    top: 6rem;
+    top: 7rem;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 2rem;
+    color: yellow;
+    text-shadow:
+        -1px -1px 0 #2A75BB,
+        1px -1px 0 #2A75BB,
+        -1px  1px 0 #2A75BB,
+        1px  1px 0 #2A75BB;
 }
+
 /* Contador para el score */
 .phone__score::after {
     content: counter(score);
@@ -49,6 +57,7 @@ body {
 input:checked {
     counter-increment: score;
 }
+
 /* Estilos para los checkbox */
 input[type=checkbox] {
     position: relative;
@@ -57,6 +66,32 @@ input[type=checkbox] {
     height: 5rem;
     width: 8rem;
     margin: 0;
+}
+
+/* Posición de cada checkbox del Pikachu */
+.layer-1 input[type=checkbox] {
+    position: absolute;
+    top: 149px;
+    left: 151px;
+    z-index: 1;
+}
+.layer-2 input[type=checkbox] {
+    position: absolute;
+    top: 149px;
+    left: 151px;
+    z-index: 1;
+}
+.layer-4 input[type=checkbox] {
+    position: absolute;
+    top: 149px;
+    left: 151px;
+    z-index: 1;
+}
+.layer-6 input[type=checkbox] {
+    position: absolute;
+    top: 149px;
+    left: 151px;
+    z-index: 1;
 }
 
 /* Walls */
@@ -267,3 +302,5 @@ input[type=checkbox] {
     justify-content: center;
     align-items: center;
 }
+
+
