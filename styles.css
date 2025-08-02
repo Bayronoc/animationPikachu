@@ -277,30 +277,60 @@ input[type=checkbox] {
     top: 0;
     left: -101px;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation-name: pikachu;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.layer-2 {
+    animation-name: pikachu;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 .layer-4 {
     position: absolute;
     top: 100px;
     left: -98px;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation-name: pikachu;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 .layer-6 {
     position: absolute;
     top: 200px;
     left: 19px;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation-name: pikachu;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 
+/* Animaciones */
+@keyframes pikachu {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(70px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
